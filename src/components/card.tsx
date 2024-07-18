@@ -12,8 +12,10 @@ export function Card() {
           className="block max-w-full object-cover rounded-xl"
         />
       </div>
-      <h3 className="text-lg font-bold">Essencial Masculino 100ml</h3>
-      <span className="text-xl font-bold">R$212,00</span>
+      <h3 className="text-base md:text-lg font-bold">
+        Essencial Masculino 100ml
+      </h3>
+      <span className="text-lg md:text-xl font-bold">R$212,00</span>
     </div>
   )
 }
