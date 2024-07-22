@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Setup e Execução do Projeto
 
-## Getting Started
+## Pré-requisitos
 
-First, run the development server:
+Antes de iniciar o frontend, certifique-se de que o servidor backend esteja funcionando. O backend deve estar inicializado e corretamente configurado.
+
+## Configuração do Ambiente
+
+### 1. Inicializar o Backend
+
+Garanta que o servidor backend esteja em execução. Siga as instruções do repositório do backend para iniciar o servidor.
+
+### 2. Criar o Arquivo de Variáveis de Ambiente
+
+Copie o arquivo de exemplo de variáveis de ambiente e crie o seu próprio arquivo `.env.local` com a configuração necessária:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+ cp .env.local.example .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra o arquivo .env.local e configure as variáveis de ambiente de acordo com a sua configuração local. Este arquivo é usado para configurar detalhes de conexão e outras configurações específicas do seu ambiente.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Executando o Frontend
 
-## Learn More
+### 1. Instalar Dependências
 
-To learn more about Next.js, take a look at the following resources:
+Instale as dependências necessárias para o projeto frontend:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 2. Construir e Iniciar o Frontend
 
-## Deploy on Vercel
+Construa o projeto para produção e inicie o servidor usando o seguinte comando:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build && npm run start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este comando constrói o projeto para produção e depois inicia o servidor. A aplicação estará acessível no endereço especificado, normalmente `http://localhost:3000`.
+
+## Notas Adicionais
+
+* Certifique-se de que o arquivo `.env.local` esteja configurado corretamente com a URL base da API do backend e outras variáveis de ambiente necessárias.
+
+* Consulte a documentação do repositório do backend para quaisquer requisitos adicionais de configuração ou instalação.
