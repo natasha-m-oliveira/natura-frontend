@@ -1,7 +1,7 @@
 export function Banner() {
   return (
     <div className="bg-amber-600 text-white w-full h-[70lvh]">
-      <div className="grid grid-cols-2 items-center w-[calc(100%-2rem)] max-w-[calc(1280px-2rem)] mx-auto h-full">
+      <div className="grid md:grid-cols-2 items-center w-[calc(100%-2rem)] max-w-[calc(1280px-2rem)] mx-auto h-full">
         <div>
           <h2 className="md:text-5xl text-4xl font-bold">Se joga no arraiá</h2>
           <span className="block my-4 text-sm">
