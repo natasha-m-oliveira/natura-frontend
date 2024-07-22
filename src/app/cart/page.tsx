@@ -19,7 +19,7 @@ export default function Cart() {
         <Link href="./cart">Carrinho</Link>
       </Breadcrumbs>
 
-      <main className="grid grid-cols-[2fr_1fr] gap-4 my-4">
+      <main className="grid md:grid-cols-[2fr_1fr] gap-4 my-4">
         <h2 className="text-3xl font-extrabold mb-2 col-span-full">
           Seu carrinho
         </h2>

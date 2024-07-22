@@ -23,7 +23,9 @@ export default function Products() {
   const [products, setProducts] = useState<IProduct[]>([])
   const [hasMoreData, setHasMoreData] = useState(false)
 
-  const search = String(searchParams.get('search'))
+  const search = searchParams.has('search')
+    ? String(searchParams.get('search'))
+    : ''
 
   function handleFetchMoreProducts() {
     listProducts(products.length).then((res) => {
@@ -46,7 +48,7 @@ export default function Products() {
   }, [search])
 
   return (
-    <main className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8 w-[calc(100%-2rem)] max-w-[calc(1280px-2rem)] mx-auto my-8">
+    <main className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8 w-[calc(100%-2rem)] max-w-[calc(1280px-2rem)] mx-auto my-8">
       {products.map((product) => (
         <Product
           key={product.id}

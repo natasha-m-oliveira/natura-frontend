@@ -14,11 +14,11 @@ export function Header() {
 
   return (
     <header className="flex items-center gap-6 py-2 w-[calc(100%-2rem)] max-w-[calc(1280px-2rem)] h-20">
-      <Link href="/" className="text-2xl font-bold">
+      <Link href="/" className="text-2xl font-bold hidden md:block">
         Cosméticos&Co
       </Link>
 
-      <nav className="relative flex justify-center">
+      <nav className="relative hidden md:flex justify-center">
         <ul className="center flex list-none">
           <li>
             <Link
@@ -46,7 +46,7 @@ export function Header() {
           )}
           <ShoppingCartSimple className="w-8 h-8" weight="bold" />
         </Link>
-        <Link href="#">
+        <Link href="#" className="hidden md:block">
           <UserCircle className="w-8 h-8" weight="bold" />
         </Link>
       </div>

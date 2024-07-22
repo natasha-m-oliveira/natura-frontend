@@ -15,7 +15,6 @@ export async function api<T>(
     headers: {
       'Content-Type': 'application/json',
     },
-    cache: 'no-store',
   }
 
   const finalOptions: FetchOptions = { ...defaultOptions, ...options }

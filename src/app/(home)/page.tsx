@@ -25,7 +25,7 @@ export default async function Home() {
         descubra as fragrâncias que combinam com você
       </h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-[calc(100%-2rem)] max-w-[calc(1280px-2rem)] mx-auto">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-[calc(100%-2rem)] max-w-[calc(1280px-2rem)] mx-auto">
         {products.map((product) => (
           <Product
             key={product.id}
